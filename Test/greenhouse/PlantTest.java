@@ -1,4 +1,4 @@
-package Växthotell;
+package greenhouse;
 
 import org.junit.jupiter.api.Test;
 

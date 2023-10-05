@@ -1,0 +1,37 @@
+
+
+Plant.java: Detta är en abstrakt klass som fungerar som en gemensam bas för alla växttyperna.
+Den innehåller egenskaper som växtens namn och höjd samt två abstrakta metoder: getWaterAmount() och
+getLiquidType(), som alla växttyper måste implementera.
+
+WateringInterface.java: Detta är ett gränssnitt som definierar två metoder: getWaterAmount() och getLiquidType().
+Alla växttyper implementerar detta gränssnitt för att ange hur mycket vatten de behöver och vilken typ av
+vätska de föredrar.
+
+Cactus.java: En klass som ärver från Plant och representerar kaktusväxter. Den implementerar metoderna
+getWaterAmount() och getLiquidType() enligt deras behov.
+
+Palm.java: En klass som ärver från Plant och representerar palmväxter. Den implementerar också metoderna
+getWaterAmount() och getLiquidType().
+
+CarnivorousPlant.java: Ännu en klass som ärver från Plant och representerar köttätande växter.
+Den implementerar också metoderna getWaterAmount() och getLiquidType().
+
+LiquidType.java: En enum-klass som innehåller olika typer av vätska som växterna kan få, såsom
+vatten, proteindryck och mineralvatten.
+
+
+
+I GreenestGreenhouseInteractive.java skapar vi en instans av Scanner för att ta in användarens input.
+Användaren ombeds att ange namnet på den växt de vill vattna.
+Vi har en array plants som innehåller några olika typer av växter med sina namn och höjder.
+Vi använder en loop för att söka igenom arrayen och matcha användarens angivna växtnamn med namnen på växterna i arrayen.
+Om en matchning hittas, beräknar vi mängden vatten som växten behöver och vilken typ av vätska den föredrar, och visar
+sedan detta för användaren. Om ingen matchning hittas, meddelar vi användaren att växten inte finns i växthuset.
+Avslutning:
+
+Sammanfattningsvis har vi skapat en kod som använder objektorienterad programmering för att simulera vattning av
+olika växter i ett växthus. Vi har använt klasser, abstrakta metoder och gränssnitt för att strukturera koden
+på ett organiserat sätt. Koden är interaktiv och låter användaren ange vilken växt de vill vattna och visar
+sedan mängden vatten och vätsketyp som behövs. Detta är ett enkelt exempel på hur man kan använda Java för
+att modellera och hantera olika objekt i en applikation.
