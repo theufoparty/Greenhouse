@@ -17,7 +17,7 @@ public class InteractiveGreenHouse {
                     new Palm("Olof", 1.0)
             };
 
-            // Flagga för att indikera om man har hittat växten med det angivna namnet.
+            // Jag börjar med att sätta den här flaggan till false, när jag hittar plantan så sätts den till true.
             boolean found = false;
 
             // Loopa igenom arrayen med växttyper.

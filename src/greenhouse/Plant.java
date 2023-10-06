@@ -1,5 +1,7 @@
 package greenhouse;
 // Abstrakt klass som representerar en grundläggande växt.
+// Som implementerar WateringInterface, vilket innebär att alla klasser som ärver
+// Plant måste implementera de metoder som WateringInterface har.
 abstract class Plant implements WateringInterface {
     private String name;
     private double height;
